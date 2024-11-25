@@ -9,7 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    public function (int $limit_count = 10)
+    public function getPaginateByLimit(int $limit_count = 10)
 
     {
         // updated_atで降順に並べたあと、limitで件数制限をかける
